@@ -1,0 +1,71 @@
+/* css/style.css */
+.melo-tts-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.melo-tts-button {
+    background: #0073aa;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.melo-tts-button:hover {
+    background: #005a87;
+}
+
+.melo-tts-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.melo-tts-button .play-icon {
+    font-size: 14px;
+}
+
+#melo-tts-player {
+    margin-top: 15px;
+}
+
+#melo-tts-audio {
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+}
+
+.melo-tts-loading {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.melo-tts-loading:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
